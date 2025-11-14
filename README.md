@@ -39,3 +39,15 @@ Par conséquent, on vous fournit le mot de passe associé à un compte admin :
 Pseudo : mai_ml
 Mot de passe : maiforum
 
+## Schéma logique de notre base de données Mongodb
+
+![Schema BDD](Schema_base_de_données_Mongodb.pdf)
+
+## Arbre des composantes
+
+![Arbre](Arbre-composantes.png)
+
+## Vidéo de démo
+
+![demo](demo.mp4)
+
