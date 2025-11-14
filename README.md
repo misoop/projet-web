@@ -45,7 +45,7 @@ Mot de passe : maiforum
 
 ## Arbre des composantes
 
-![Arbre](Arbre-composantes)
+![Arbre](Arbre-composantes.png)
 
 ## Vidéo de démo
 
