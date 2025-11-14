@@ -41,7 +41,7 @@ Mot de passe : maiforum
 
 ## Schéma logique de notre base de données Mongodb
 
-![Schema BDD](Schema_base_de_données_Mongodb.pdf)
+![Schema BDD](Schema_base_de_données_Mongodb.png)
 
 ## Arbre des composantes
 
