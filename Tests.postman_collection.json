@@ -1,0 +1,863 @@
+{
+	"info": {
+		"_postman_id": "dfddb08f-8b44-4b3a-9b80-2d7dd5870b59",
+		"name": "Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34875092"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/messages",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"messages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/messages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/messages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"messages"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "886"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"376-yxVnt/P3oPuaoPWKPxpXegJFy1w\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 19:55:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"663d344c04d50af4731660de\",\n        \"comment\": false,\n        \"pseudo\": \"cam\",\n        \"public\": true,\n        \"date\": \"09-05-2024\",\n        \"temps\": \"22:38\",\n        \"contenu\": \"Salut comment ça va ?\",\n        \"reponses\": [\n            \"663d40a957fe9d04f5f4554a\"\n        ],\n        \"likes\": []\n    },\n    {\n        \"_id\": \"663d35be04d50af4731660e8\",\n        \"comment\": false,\n        \"pseudo\": \"mai_ml\",\n        \"public\": true,\n        \"date\": \"09-05-2024\",\n        \"temps\": \"22:44\",\n        \"contenu\": \"message\",\n        \"reponses\": [],\n        \"likes\": []\n    },\n    {\n        \"_id\": \"663d502b57fe9d04f5f45558\",\n        \"comment\": false,\n        \"pseudo\": \"michelle\",\n        \"public\": true,\n        \"date\": \"10-05-2024\",\n        \"temps\": \"0:37\",\n        \"contenu\": \"hello\",\n        \"reponses\": [\n            \"663d505c57fe9d04f5f45559\"\n        ],\n        \"likes\": []\n    },\n    {\n        \"_id\": \"663d506857fe9d04f5f4555a\",\n        \"comment\": false,\n        \"pseudo\": \"michelle\",\n        \"public\": true,\n        \"date\": \"10-05-2024\",\n        \"temps\": \"0:38\",\n        \"contenu\": \"bonjour\",\n        \"reponses\": [],\n        \"likes\": []\n    },\n    {\n        \"_id\": \"663d50d657fe9d04f5f4555b\",\n        \"comment\": false,\n        \"pseudo\": \"michelle\",\n        \"public\": true,\n        \"date\": \"10-05-2024\",\n        \"temps\": \"0:40\",\n        \"contenu\": \"nouveau\",\n        \"reponses\": [],\n        \"likes\": []\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/user/mai_ml",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/mai_ml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"mai_ml"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/user/mai_ml",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/user/mai_ml",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"mai_ml"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "225"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e1-lAkt6f0hGa8viC2lUa7ohBg/qEU\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 19:55:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"_id\": \"663d344c04d50af4731660e0\",\n    \"pseudo\": \"mai_ml\",\n    \"email\": \"mai@email.com\",\n    \"password\": \"$2b$10$C7lfZhT5fQaytAVTaPUQTe.ewu1ECqLh2iMu4lDd/OVaLii0K2SMy\",\n    \"nom\": \"Merill\",\n    \"prenom\": \"Mai\",\n    \"membre\": true,\n    \"admin\": true,\n    \"date\": \"9-5-2024\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/userList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/userList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"userList"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/userList",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/userList",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"userList"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1148"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"47c-60QbkrPhYr78Afvc5wD7sjLyLdg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 19:55:57 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"663d344c04d50af4731660e0\",\n        \"pseudo\": \"mai_ml\",\n        \"email\": \"mai@email.com\",\n        \"password\": \"$2b$10$C7lfZhT5fQaytAVTaPUQTe.ewu1ECqLh2iMu4lDd/OVaLii0K2SMy\",\n        \"nom\": \"Merill\",\n        \"prenom\": \"Mai\",\n        \"membre\": true,\n        \"admin\": true,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e1\",\n        \"pseudo\": \"téas\",\n        \"email\": \"téa@email.com\",\n        \"password\": \"$2b$10$cBBFd/nAFYUURxxkFhuH.u24ftQXnGn.VX2WkrryAlxDIjGFPXq2m\",\n        \"nom\": \"Ash\",\n        \"prenom\": \"Téa\",\n        \"membre\": false,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e2\",\n        \"pseudo\": \"cam\",\n        \"email\": \"camelia@email.com\",\n        \"password\": \"$2b$10$AesJ694bhsznj3eOBUr9s.KqMgTL5Kdo7iHarVI2btyKBVDeC/Ysm\",\n        \"nom\": \"Bouali\",\n        \"prenom\": \"Camelia\",\n        \"membre\": true,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e3\",\n        \"pseudo\": \"michelle\",\n        \"email\": \"michelle@email.com\",\n        \"password\": \"$2b$10$MC0HAuoZD4qpwHljfijRTuvCAEPWyjhwV3OYo7Z/BDY3g/9O7JDh.\",\n        \"nom\": \"Song\",\n        \"prenom\": \"Michelle\",\n        \"membre\": true,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e4\",\n        \"pseudo\": \"rosa\",\n        \"email\": \"rose@email.com\",\n        \"password\": \"$2b$10$whC756m4xLZwri2zf05Fn.W32DV04Ofjd/pgSwGpR/orl60sN1gRy\",\n        \"nom\": \"Mary\",\n        \"prenom\": \"Rose\",\n        \"membre\": false,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/users/admins",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/admins",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"admins"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/users/admins",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/users/admins",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"admins"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "227"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e3-LoiqlR0Pud5XTKsCQDFYC84vbmo\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 19:56:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"663d344c04d50af4731660e0\",\n        \"pseudo\": \"mai_ml\",\n        \"email\": \"mai@email.com\",\n        \"password\": \"$2b$10$C7lfZhT5fQaytAVTaPUQTe.ewu1ECqLh2iMu4lDd/OVaLii0K2SMy\",\n        \"nom\": \"Merill\",\n        \"prenom\": \"Mai\",\n        \"membre\": true,\n        \"admin\": true,\n        \"date\": \"9-5-2024\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/users/membres",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/membres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"membres"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/users/membres",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/users/membres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"membres"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "696"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b8-VJzo4FA1t4ZTOPCDtMzwckBTVbQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 19:57:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"663d344c04d50af4731660e0\",\n        \"pseudo\": \"mai_ml\",\n        \"email\": \"mai@email.com\",\n        \"password\": \"$2b$10$C7lfZhT5fQaytAVTaPUQTe.ewu1ECqLh2iMu4lDd/OVaLii0K2SMy\",\n        \"nom\": \"Merill\",\n        \"prenom\": \"Mai\",\n        \"membre\": true,\n        \"admin\": true,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e2\",\n        \"pseudo\": \"cam\",\n        \"email\": \"camelia@email.com\",\n        \"password\": \"$2b$10$AesJ694bhsznj3eOBUr9s.KqMgTL5Kdo7iHarVI2btyKBVDeC/Ysm\",\n        \"nom\": \"Bouali\",\n        \"prenom\": \"Camelia\",\n        \"membre\": true,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e3\",\n        \"pseudo\": \"michelle\",\n        \"email\": \"michelle@email.com\",\n        \"password\": \"$2b$10$MC0HAuoZD4qpwHljfijRTuvCAEPWyjhwV3OYo7Z/BDY3g/9O7JDh.\",\n        \"nom\": \"Song\",\n        \"prenom\": \"Michelle\",\n        \"membre\": true,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/users/requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/users/requests",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"requests"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/users/requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/users/requests",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"requests"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "453"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1c5-6J18xCQBbiL2S6vHko6KwRXwQG8\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 19:58:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"_id\": \"663d344c04d50af4731660e1\",\n        \"pseudo\": \"téas\",\n        \"email\": \"téa@email.com\",\n        \"password\": \"$2b$10$cBBFd/nAFYUURxxkFhuH.u24ftQXnGn.VX2WkrryAlxDIjGFPXq2m\",\n        \"nom\": \"Ash\",\n        \"prenom\": \"Téa\",\n        \"membre\": false,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    },\n    {\n        \"_id\": \"663d344c04d50af4731660e4\",\n        \"pseudo\": \"rosa\",\n        \"email\": \"rose@email.com\",\n        \"password\": \"$2b$10$whC756m4xLZwri2zf05Fn.W32DV04Ofjd/pgSwGpR/orl60sN1gRy\",\n        \"nom\": \"Mary\",\n        \"prenom\": \"Rose\",\n        \"membre\": false,\n        \"admin\": false,\n        \"date\": \"9-5-2024\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/user/gestion/admins/cam",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/gestion/admins/cam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"gestion",
+						"admins",
+						"cam"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/user/gestion/admins/cam",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/user/gestion/admins/cam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"gestion",
+								"admins",
+								"cam"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "48"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"30-3zYgyhmAn4DuO+lQtwnZITBnUBk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 20:00:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Modification reussite\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/user/cam",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/user/cam",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"cam"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/user/cam",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/user/cam",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"cam"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"31-1JOgJnyIOclExRBQ1a1uSilSVNc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 20:01:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Suppression du user OK\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/user/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"login\": \"mai_ml\",\n    \"password\": \"maiforum\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/user/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\n{\n    \"login\": \"mai_ml\",\n    \"password\": \"maiforum\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "290"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"122-Mq6kxCOn9ZpYV8c1yUOyvbCHgrw\""
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "connect.sid=s%3AU5bJfGyHKkL9yg2HY_qgdvsyRwuLX2Nl.pdCERPt%2Bd6ZwtzpTjV6Gf%2BuTyZUmCgqH9t0m1jaJfo0; Path=/; HttpOnly"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 20:08:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Login et mot de passe accepté\",\n    \"user\": {\n        \"_id\": \"663d344c04d50af4731660e0\",\n        \"pseudo\": \"mai_ml\",\n        \"email\": \"mai@email.com\",\n        \"password\": \"$2b$10$C7lfZhT5fQaytAVTaPUQTe.ewu1ECqLh2iMu4lDd/OVaLii0K2SMy\",\n        \"nom\": \"Merill\",\n        \"prenom\": \"Mai\",\n        \"membre\": true,\n        \"admin\": true,\n        \"date\": \"9-5-2024\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:8000/api/message/663d506857fe9d04f5f4555a",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/message/663d506857fe9d04f5f4555a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"message",
+						"663d506857fe9d04f5f4555a"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:8000/api/message/663d506857fe9d04f5f4555a",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/message/663d506857fe9d04f5f4555a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"message",
+								"663d506857fe9d04f5f4555a"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "52"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"34-MHPgWGTfnD4aivnl1qLY9wI4QyE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 May 2024 20:14:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Suppression du message OK\"\n}"
+				}
+			]
+		}
+	]
+}

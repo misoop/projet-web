@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+form[class="login-form"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 380px;
+    height: 450px;
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 25px;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.126);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.192);
+    
+    animation-name: slideLeft;
+    animation-duration: 1s; 
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-400px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.connexion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items:  center;
+    background: rgb(42, 32, 105);
+}
+
+button[id="btn-enreg"] {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.connexion h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input[type="text"], [type="password"] {
+    background: rgba(188, 187, 187, 0.133);
+    border: solid rgba(0, 0, 0, 0.126);
+    border-radius: 40px;
+    padding: 15px 45px 15px 20px;
+}
+
+.connexion input[type="submit"] {
+    height: 40px;
+    border-radius: 40px;
+    border: solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    color: white;
+    background-color: #383f77;
+    font-weight: 600;
+}
+
+.connexion input[type="submit"]:hover {
+    background-color: #2d2866;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.remember-me {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+input {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
+
+form a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 20px 0 15px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.sign-in {
+    display: flex;
+    gap: 10px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.sign-in button {
+    font-family: "Montserrat", sans-serif;
+    background: transparent;
+    color: white;
+}
+
+.sign-in button:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,129 @@
+
+:root{
+
+    --color-white: hsl(252,30%,100%);
+    --color-light: hsl(252,30%,95%);
+    --color-gray: hsl(252,15%,65%);
+    --color-primary: hsl(252,75%,60%);
+    --color-secondary: hsl(252,100%,90%);
+    --color-success: hsl(120,95%,65%);
+    --color-danger: hsl(0,95%,65%);
+    --color-dark: hsl(252,30%,17%);
+    --color-black: hsl(252,30%,10%);
+    --color-blue : hsl(202,75%,60%);
+
+
+}
+
+.gestion-container{
+    
+    
+    background-color: var(--color-white);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1.2rem;
+    width: 300px;
+    margin-left: 1.2rem;
+
+
+    
+}
+
+
+
+.gestion-container .search-bar{
+    background-color: var(--color-light);
+    padding: 0.7rem 1.2rem;
+    border-radius: 1.5rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+    
+}
+
+.gestion-container .search-bar input{
+    width: 70%;
+    background-color: transparent;
+    outline: none;
+    margin-left: 0.7rem;
+    border: none;
+}
+
+/*------------------------CATEGORY------------------------*/
+
+.gestion-container .category{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+.gestion-container .category h5{
+    width: 100%;
+    text-align: center;
+    border-bottom: 4px solid var(--color-light);
+    padding-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.gestion-container .category .active{
+    border-color: var(--color-black);
+}
+
+.gestion-container .category #request{
+    color: var(--color-primary);
+}
+
+/*------------------------USERS---------------------*/
+
+.gestion-container .user-list{
+    overflow-y:scroll;
+    /*height:35vh;*/
+    height: 28vh;
+
+}
+
+
+.gestion-container .user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+}
+
+.gestion-container .user .head h4{
+    font-size: 1.2rem;
+}
+
+.gestion-container .user .action {
+    display: flex;
+    
+    column-gap: 0.7rem;
+    margin-top: 0.6rem;
+}
+
+
+
+.gestion-container .user .action button{
+    color: var(--color-white);
+    padding: 0.25rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    height: 2rem;
+}
+
+.gestion-container .user .action button:hover{
+    opacity: 0.8;
+}
+
+.gestion-container .user .action button:nth-child(1){
+    background-color: var(--color-primary);
+}
+
+.gestion-container .user .action button:nth-child(2){
+    background-color: var(--color-blue);
+}

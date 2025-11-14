@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.container_main {
+    display: grid;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container_pro {
+    height: 82vh;
+}
+
+img[id="pdp"] {
+    width: 200px;
+    height: 200px;
+}
+
+main[id="main_pro"] {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    column-gap: 20px;
+    height: 70vh;
+}
+
+.basic-info {
+    text-align: center;
+    margin: 40px;
+    margin-top: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.779);
+    border: 2px solid rgba(0, 0, 0, 0.126);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.192);
+    border-radius: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.basic-info button {
+    height: 30px;
+    width: 100px;
+    background-color: #383f77;
+    border-radius: 40px;
+    border: solid rgba(255, 255, 255, .2);
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.basic-info button:hover {
+    background-color: #2d2866;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color:#fff;
+    cursor: pointer;
+    animation: rainbow 1500ms infinite;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: orange;
+    }
+
+    40% {
+        background-color: yellow;
+    }
+
+    60% {
+        background-color: green;
+    }
+
+    80% {
+        background-color: blue;
+    }
+}
+
+.sns-pad-top {
+    border-top: 2px solid rgba(0, 0, 0, 0.126); 
+}
+
+.sns-pad-bot {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.126); 
+}
+
+.principal {
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
+    height: 71vh;
+    overflow-y: scroll;
+}
+
+.msg-pro .list-msg {
+    padding-top: 0;
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    margin: 40px;
+    margin-top: 0;
+
+    background: rgba(255, 255, 255, 0.779);
+    border: 2px solid rgba(0, 0, 0, 0.126);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.192);
+    border-radius: 30px;
+    height: 194px;
+}
+
+.pers-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.title-pro h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: xx-large;
+    padding-left: 20px;
+}

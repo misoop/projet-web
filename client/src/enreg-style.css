@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+.register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: rgb(42, 32, 105);
+}
+
+form[class="enreg"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    width: 480px;
+    height: 580px;
+    border-radius: 20px;
+    padding: 30px 25px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.126);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.192);
+    font-family: "Montserrat", sans-serif;
+
+    animation-name: slideTop;
+    animation-duration: 1s; 
+}
+
+@keyframes slideTop {
+from {
+    transform: translateY(-400px);
+}
+
+to {
+    transform: translateX(0);
+}
+}
+
+
+.name-area {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    justify-content: space-between;
+}
+
+.agree {
+    padding-left: 20px;
+    font-style: 14.5px;
+    margin-bottom: 20px;
+}
+
+.agree label a {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 20px 0 15px;
+}
+
+.agree label a:hover {
+    text-decoration: underline;
+}
+
+.register input {
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+
+.register input[type="submit"] {
+    height: 40px;
+    border-radius: 40px;
+    border: solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    background-color: #383f77;
+    color: white;
+    font-weight: 600;
+}
+
+.register input[type="submit"]:hover {
+    background-color: #2d2866;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color:#fff;
+}
+
+input[type="checkbox"] {
+    accent-color: rgba(0, 0, 255, 0.287);
+}
+
+h1 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+input[type="text"], [type="password"], [type="email"] {
+    background: rgba(191, 190, 190, 0.186);
+    border: solid rgba(0, 0, 0, 0.126);
+    border-radius: 40px;
+    padding: 15px 45px 15px 20px;
+}
+
+label[for$=name] {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+input::placeholder {
+    font-style: 16px;
+}
+
+form a {
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 20px 0 15px;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+.enreg p {
+    margin: 0;
+}

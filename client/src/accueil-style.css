@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.container, .container-admin {
+    display: grid;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+img[id="logo"] {
+    width: 80px;
+    height: 80px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 15vh;
+    align-items: center;
+    font-family: "Montserrat", sans-serif; 
+    padding: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.126);
+    background-color: #1e276a;
+    color: white;
+}
+
+.content-area {
+    display: grid;
+    /*grid-template-columns: 23% 77%;*/
+    grid-template-columns: 25vw auto;
+    height: 82vh;
+    background: white;
+}
+
+header img {
+    margin: 10px;
+    padding: 10px;
+}
+
+h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: x-large;
+    padding-left: 20px;
+}
+
+aside h3 {
+    padding-left: 0;
+}
+
+.title {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.17);
+    height: fit-content;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+
+.search-area {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-areas: 
+    "input button"
+    "date date";
+    row-gap: 3px;
+    column-gap: 3px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.search-date {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    grid-area: date;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+input[id="recherche"] {
+    height: 45px;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+    border: solid rgba(91, 83, 83, 0.2);
+    padding: 15px 45px 15px 20px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.search-area button, .date-input {
+    border-radius: 40px;
+    border: solid rgba(91, 83, 83, 0.2);
+    font-family: "Montserrat", sans-serif;
+    background: rgba(255, 255, 255, 0.468);
+}
+
+header button, .infos-content button, .reply-button, .see-coms, .reply-button-com {
+    border-radius: 8px;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.reply-button-com, .see-coms {
+    background-color: #9aa2ca79;
+}
+
+header button {
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+.login-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    border: black;
+    margin: 10px;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.login-area a {
+    text-decoration: none;
+}
+
+.btn-logout {
+    display: flex;
+    background: rgba(255, 255, 255, 0.295);
+    border-radius: 40px;
+    border: solid rgba(91, 83, 83, 0.2);
+    height: 30px;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-logout a {
+    color: black;
+}
+
+.infos-area {
+    height: 100%;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.126);
+    border-top: 0;
+    border-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.infos-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*align-items: center;*/
+}
+
+.infos-content button {
+    width: 300px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container main {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    overflow: scroll;
+}
+
+.new-msg {
+    display:flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.051);
+    border-top: 0;
+}
+
+.send-new-msg, .send-new-com {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    padding: 10px;
+}
+
+.container input[value="Envoyer"] {
+    height: 40px;
+    width: 100px;
+    background-color: #383f77;
+    border-radius: 40px;
+    border: solid rgba(255, 255, 255, .2);
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+input[value="Envoyer"]:hover {
+    background-color: #2d2866;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color:#fff;
+}
+
+.send-new-msg textarea, .send-new-com textarea {
+    height: 70px;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(0, 0, 0, 0.214);
+    border-radius: 20px;
+    padding: 15px 45px 15px 20px;
+    font-family: "Montserrat", sans-serif;
+    resize: none;
+    font-size: 15px;
+}
+
+.send-new-msg textarea::placeholder, .send-new-com textarea::placeholder, .container input {
+   font-family: "Montserrat", sans-serif;
+}
+
+.msg-area {
+    display: grid;
+    grid-template-rows: 70px 407px;
+    background: rgb(255, 255, 255);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.msg, .com {
+    display: grid;
+    align-items: center;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.223);
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+.msg-user button {
+    border: none;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+
+.msg-user button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.msg-info, .msg-info-com {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    height: 23px;
+    background-color: rgba(211, 211, 211, 0.478);
+    align-items: center;
+    border: 1px solid rgba(128, 128, 128, 0.37);
+}
+
+.msg-content {
+    height: 60px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.117);
+    border-radius: 5px;
+    position: relative;
+}
+
+.list-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.reply-button, .reply-button-com, .see-coms {
+    height: 40px;
+}
+
+.send-new-com input {
+    background: rgba(91, 26, 125, 0.993);
+    border-radius: 40px;
+    border: solid rgba(91, 83, 83, 0.2);
+    height: 50px;
+    width: 100px;
+    color: white;
+}
+
+.msg-info-com {
+    background-color: #9c7bb996;
+}
+
+.msg-icon {
+    display: flex;
+    position: absolute;
+    column-gap: 5px;
+    bottom: 0.5rem;
+    right: 0.5rem
+}
+
+.msg-icon span {
+    /*color: rgba(128, 128, 128, 0.426);*/
+    font-size: 1.4rem;
+}
+
+#like:hover {
+    cursor: pointer;
+}
+
+.couleur-rouge {
+    color: var(--color-danger);
+    background: radial-gradient(circle 12px at 50% 50%, #f82323, #fce3e3);
+    border-radius: 1rem;
+}
+
+#trash {
+    transition: all 400ms ease;
+}
+
+#trash:hover {
+    cursor: pointer;
+    color: var(--color-primary);
+    background-color:hsla(231, 96%, 65%, 0.17) ;
+    border-radius: 1rem;
+}
